@@ -1,0 +1,28 @@
+<h2>Crear una Publicación</h2>
+<div>
+  <div class="form-group">
+    <label>Titulo</label>
+    <input [(ngModel)]="blog.title" type="text" class="form-control" id="title"  placeholder="Ingrese su Titulo">
+  </div>
+  <div class="form-group">
+    <label>Imagen</label>
+    <input [(ngModel)]="blog.image" type="text" class="form-control" id="image"  placeholder="Ingrese su Imagen">
+  </div>
+  <div class="form-group">
+    <label>Descripción</label>
+     <textarea [(ngModel)]="blog.body" class="form-control" id="body" placeholder="Ingrese su Descripción" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Seleccione el tipo</label>
+    <select [(ngModel)]="blog.type" class="form-control" id="type">
+      <option>Noticia</option>
+      <option>Publicidad</option>
+      <option>Evento</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Fecha</label>
+    <input [(ngModel)]="blog.date" type="date" class="form-control" id="date"  placeholder="Ingrese la Fecha">
+  </div>
+  <button (click)="saveBlog()" type="submit" class="btn btn-primary btn-block">Enviar</button>
+</div>
