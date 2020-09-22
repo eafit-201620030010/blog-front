@@ -11,7 +11,7 @@ What things you need to install the software.
 ### Install
 Clone the git repository on your computer
 ```
-$ git clone https://github.com/eafit-201620030010/blog-back.git
+$ git clone https://github.com/eafit-201620030010/blog-front.git
 ```
 
 After cloning the application, you need to install it's dependencies. 
